@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "../ui/Card";
+import { TiltCard } from "../ui/TiltCard";
 import { Zap, Shield, Users, Trophy, Cpu, Globe, Crosshair, Terminal } from "lucide-react";
 
 const features = [
@@ -79,15 +80,17 @@ export function Features() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.05 }}
                         >
-                            <Card className="p-8 h-full bg-fantosia-surface/50 border-white/5 hover:border-fantosia-primary/30">
-                                <div className="mb-6 bg-fantosia-bg/50 w-12 h-12 rounded-lg flex items-center justify-center border border-white/10 shadow-inner">
-                                    {feature.icon}
-                                </div>
-                                <h3 className="text-xl font-display font-bold text-white mb-3 tracking-wide">{feature.title}</h3>
-                                <p className="text-sm text-fantosia-muted leading-relaxed font-light">
-                                    {feature.description}
-                                </p>
-                            </Card>
+                            <TiltCard className="h-full">
+                                <Card className="p-8 h-full bg-fantosia-surface/50 border-white/5 hover:border-fantosia-primary/30 transition-colors">
+                                    <div className="mb-6 bg-fantosia-bg/50 w-12 h-12 rounded-lg flex items-center justify-center border border-white/10 shadow-inner">
+                                        {feature.icon}
+                                    </div>
+                                    <h3 className="text-xl font-display font-bold text-white mb-3 tracking-wide">{feature.title}</h3>
+                                    <p className="text-sm text-fantosia-muted leading-relaxed font-light">
+                                        {feature.description}
+                                    </p>
+                                </Card>
+                            </TiltCard>
                         </motion.div>
                     ))}
                 </div>

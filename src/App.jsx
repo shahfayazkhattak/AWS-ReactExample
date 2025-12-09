@@ -4,10 +4,14 @@ import { Hero } from "./components/sections/Hero";
 import { Features } from "./components/sections/Features";
 import { About } from "./components/sections/About";
 import { Newsletter } from "./components/sections/Newsletter";
+import { CustomCursor } from "./components/ui/CustomCursor";
+import { ScrollProgress } from "./components/ui/ScrollProgress";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#030014] text-fantosia-text font-sans selection:bg-fantosia-primary selection:text-black overflow-x-hidden">
+    <div className="min-h-screen bg-[#030014] text-fantosia-text font-sans selection:bg-fantosia-primary selection:text-black overflow-x-hidden cursor-none">
+      <CustomCursor />
+      <ScrollProgress />
       <Navbar />
 
       <main>
