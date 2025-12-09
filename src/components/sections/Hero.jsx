@@ -53,7 +53,7 @@ export function Hero() {
                         <span className="absolute -inset-1 blur-xl bg-gradient-to-r from-fantosia-primary to-fantosia-secondary opacity-30 animate-pulse-glow"></span>
 
                         <span className="relative inline-block py-1 px-4 rounded-full bg-fantosia-surface/80 border border-fantosia-primary/30 text-fantosia-primary text-xs md:text-sm font-display tracking-[0.2em] mb-8 backdrop-blur-md shadow-[0_0_20px_rgba(0,240,255,0.2)]">
-                            SYSTEM ONLINE // FANTOSIA // SEASON 4
+                            SYSTEM ONLINE // FANTOSIA 1.1 // SEASON 4
                         </span>
 
                         <h1 className="text-6xl md:text-9xl font-display font-black text-white leading-none mb-6 tracking-tighter mix-blend-overlay">

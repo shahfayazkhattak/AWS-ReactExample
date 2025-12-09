@@ -38,4 +38,4 @@ jobs:
             cd /home/ubuntu/projects/AWS-ReactExample
             git pull
             yarn
-            yarn build
+            sudo yarn build
